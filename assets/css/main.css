@@ -1165,6 +1165,14 @@ section,
   overflow: hidden;
 }
 
+.index-visual-hide {
+  display: none !important;
+}
+
+body.index-page main + footer {
+  display: none !important;
+}
+
 .trusted-by-header {
   text-align: center;
   margin-bottom: 24px;
