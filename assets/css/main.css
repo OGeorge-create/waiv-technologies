@@ -421,11 +421,11 @@ h6 {
   .navmenu a,
   .navmenu a:focus {
     width: 100%;
-    background: transparent;
-    border: 1px solid transparent;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
-    box-shadow: none;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
   }
 }
 
@@ -463,11 +463,11 @@ h6 {
   font-size: 15px;
   border-radius: 50px;
 
-  background: transparent;
-  border: 1px solid transparent;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
-  box-shadow: none;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
 
   height: 56px;
   width: 90%;
