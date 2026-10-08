@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Portfolio | Custom Software, Clinic & Retail Systems | TechWaiv</title>
+  <meta name="description" content="Explore TechWaiv's portfolio of custom software, healthcare systems, retail systems, and digital platforms built for businesses across Ghana and beyond.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://techwaiv.com/portfolio">
+  <meta property="og:title" content="Portfolio | Custom Software, Clinic & Retail Systems | TechWaiv">
+  <meta property="og:description" content="See real projects from TechWaiv, including healthcare systems, retail systems, inventory platforms, and custom business software.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://techwaiv.com/portfolio">
+  <meta property="og:image" content="https://techwaiv.com/assets/img/logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Portfolio | Custom Software, Clinic & Retail Systems | TechWaiv">
+  <meta name="twitter:description" content="View real software and digital product case studies from TechWaiv.">
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "TechWaiv Portfolio",
+      "description": "Case studies for custom software, healthcare management systems, retail systems, and digital product projects.",
+      "url": "https://techwaiv.com/portfolio",
+      "publisher": {
+        "@type": "Organization",
+        "name": "TechWaiv",
+        "url": "https://techwaiv.com"
+      }
+    }
+  </script>
+
+  <!-- Favicons -->
+  <link href="assets/img/apple-touch-icon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    .portfolio-hero {
+      background: linear-gradient(180deg, #000000 0%, #0b0f17 100%);
+      color: #fff;
+      padding: 100px 0 60px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .portfolio-hero h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+    .portfolio-hero p {
+      font-size: 1.2rem;
+      color: #94a3b8;
+      max-width: 700px;
+    }
+    .breadcrumb-bar {
+      background: #000000;
+      padding: 15px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 0.95rem;
+    }
+    .breadcrumb-bar a {
+      color: var(--primary-red);
+      text-decoration: none;
+    }
+    .breadcrumb-bar a:hover {
+      color: #B91C1C;
+    }
+    .breadcrumb-bar span {
+      color: #FFFFFF;
+      font-weight: 600;
+    }
+    .case-study-slider {
+      position: relative;
+      overflow: visible;
+      padding-bottom: 42px;
+    }
+    .case-study-slider .swiper-wrapper {
+      align-items: stretch;
+    }
+    .case-study-slider .swiper-slide {
+      height: auto;
+    }
+    .case-study-slider .swipe-hint {
+      position: absolute;
+      left: 50%;
+      top: 4px;
+      transform: translateX(-50%);
+      z-index: 6;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      opacity: 0;
+      pointer-events: none;
+      animation: portfolioSwipeHint 2.8s ease-out 1.2s 1 forwards;
+    }
+    .case-study-slider .swipe-hint span {
+      width: 34px;
+      height: 34px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.12);
+      color: #fff;
+      font-size: 1rem;
+    }
+    .case-study-slider .swipe-hint p {
+      margin: 0;
+      color: rgba(255,255,255,0.72);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.72rem;
+    }
+    @keyframes portfolioSwipeHint {
+      0% { opacity: 0; transform: translateX(-50%) translateY(-8px); }
+      18% { opacity: 1; }
+      35% { transform: translateX(-50%) translateY(0); }
+      48% { transform: translateX(-50%) translateX(-12px); }
+      60% { transform: translateX(-50%) translateX(12px); }
+      72% { transform: translateX(-50%) translateX(-8px); }
+      100% { opacity: 0; transform: translateX(-50%) translateY(6px); }
+    }
+    .case-study-slider .swiper-button-next,
+    .case-study-slider .swiper-button-prev {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.12);
+      color: #ffffff;
+      top: auto;
+      bottom: 2px;
+      z-index: 7;
+    }
+    .case-study-slider .swiper-button-next { right: 10px; }
+    .case-study-slider .swiper-button-prev { right: 60px; left: auto; }
+    .case-study-slider .swiper-button-next:after,
+    .case-study-slider .swiper-button-prev:after {
+      font-size: 1rem;
+      color: #ffffff;
+    }
+    .project-card {
+      background: rgba(31, 41, 55, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease;
+      margin-bottom: 30px;
+      -webkit-backdrop-filter: blur(12px);
+      backdrop-filter: blur(12px);
+      height: 100%;
+    }
+    .project-card:hover {
+    
+      box-shadow: 0 14px 36px rgba(0, 0, 0, 0.5);
+    }
+    .project-img-wrapper {
+      position: relative;
+      overflow: hidden;
+      background: #000000;
+      max-height: 280px;
+    }
+    .project-img-wrapper img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      object-position: top;
+    
+    }
+    .project-badge {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      background: rgba(220, 38, 38, 0.85);
+      color: #fff;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 5px 12px;
+      border-radius: 4px;
+      backdrop-filter: blur(4px);
+    }
+    .project-overlay-btn {
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      background: var(--primary-red);
+      color: #FFFFFF;
+      width: 44px;
+      height: 44px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+      transition: background 0.2s ease, color 0.2s ease;
+      text-decoration: none;
+    }
+    .project-overlay-btn:hover {
+      background: #B91C1C;
+      color: #FFFFFF;
+    }
+    .project-body {
+      padding: 25px;
+    }
+    .project-body h3 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 10px;
+    }
+    .project-body p {
+      color: #D1D5DB;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 18px;
+    }
+    .tech-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+    .tech-tag {
+      background: rgba(220, 38, 38, 0.15);
+      color: var(--primary-red);
+      border: 1px solid rgba(220, 38, 38, 0.3);
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 4px;
+    }
+    .gallery-thumbs {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding-bottom: 5px;
+    }
+    .gallery-thumb-link {
+      display: block;
+      width: 65px;
+      height: 45px;
+      border-radius: 5px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      flex-shrink: 0;
+    }
+    .gallery-thumb-link img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .cta-band {
+      background: linear-gradient(180deg, #050505 0%, #111827 100%);
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      color: #ffffff;
+      padding: 70px 0;
+      text-align: center;
+    }
+    .cta-band h2 {
+      color: #ffffff;
+      font-weight: 800;
+      margin-bottom: 15px;
+    }
+    .cta-band p {
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto 30px;
+    }
+    .btn-cta {
+      background: var(--primary-red);
+      color: #ffffff;
+      font-weight: 700;
+      padding: 14px 36px;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.3s ease;
+      box-shadow: 0 6px 20px rgba(220, 38, 38, 0.35);
+    }
+    .btn-cta:hover {
+      background: #B91C1C;
+      box-shadow: 0 8px 24px rgba(220, 38, 38, 0.5);
+      color: #ffffff;
+    }
+  </style>
+</head>
+
+<body class="starter-page-page">
+
+  <!-- ── HEADER ── -->
+  <header id="header" class="header d-flex flex-column justify-content-center">
+
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li>
+          <a href="index.html">
+            <i class="bi bi-house navicon"></i>
+            <span>Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="about.html">
+            <i class="bi bi-building navicon"></i>
+            <span>About Us</span>
+          </a>
+        </li>
+        <li>
+          <a href="service-details.html">
+            <i class="bi bi-hdd-stack navicon"></i>
+            <span>Services</span>
+          </a>
+        </li>
+        <li>
+          <a href="portfolio.html" class="active">
+            <i class="bi bi-images navicon"></i>
+            <span>Portfolio</span>
+          </a>
+        </li>
+        <li>
+          <a href="testimonials.html">
+            <i class="bi bi-chat-quote navicon"></i>
+            <span>Testimonials</span>
+          </a>
+        </li>
+        <li>
+          <a href="contact.html">
+            <i class="bi bi-envelope navicon"></i>
+            <span>Contact</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main" id="main">
+
+    <!-- ── HERO ── -->
+    <section class="portfolio-hero">
+      <div class="container" data-aos="fade-up">
+        <h1>Our Work &amp; Case Studies</h1>
+        <p>A detailed showcase of custom software platforms, healthcare clinic systems, and retail inventory management solutions built by TechWaiv.</p>
+      </div>
+    </section>
+
+    <!-- ── BREADCRUMB ── -->
+    <div class="breadcrumb-bar">
+      <div class="container">
+        <a href="index.html">Home</a> &nbsp;/&nbsp; <span>Portfolio</span>
+      </div>
+    </div>
+
+    <!-- ── CASE STUDIES ── -->
+    <section id="testimonials" class="testimonials section" style="padding: 70px 0; background: #000000;">
+      <div class="container section-title" data-aos="fade-up">
+        <h2 class="mini-style">Case Studies</h2>
+        <p>Solutions built for growth, operations, and better customer experiences.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper case-study-slider init-swiper">
+          <div class="swipe-hint" aria-hidden="true">
+            <span><i class="bi bi-arrow-left"></i></span>
+            <p>Swipe</p>
+            <span><i class="bi bi-arrow-right"></i></span>
+          </div>
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "spaceBetween": 24,
+              "slidesPerView": 1,
+              "navigation": {
+                "nextEl": ".swiper-button-next",
+                "prevEl": ".swiper-button-prev"
+              },
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "768": {
+                  "slidesPerView": 2
+                },
+                "1200": {
+                  "slidesPerView": 2
+                }
+              }
+            }
+          </script>
+
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="project-card">
+                <div class="project-img-wrapper">
+                  <img src="assets/img/projects/waiv-in/dashboard.png" alt="Waiv-In Point of Sale & Inventory System">
+                  <span class="project-badge">Retail &amp; Inventory</span>
+                  <a href="waiv-in.html" class="project-overlay-btn" title="View Waiv-In Case Study">
+                    <i class="bi bi-eye"></i>
+                  </a>
+                </div>
+                <div class="project-body">
+                  <h3>Waiv-In Point of Sale &amp; Inventory System</h3>
+                  <p>An enterprise-grade point-of-sale and multi-warehouse inventory management system. Built for retail chains to manage attendants, track stock levels, issue digital receipts, and generate automated financial sales reports.</p>
+                  <div class="tech-tags">
+                    <span class="tech-tag">POS &amp; Retail</span>
+                    <span class="tech-tag">Inventory Management</span>
+                    <span class="tech-tag">Warehouse Stock</span>
+                    <span class="tech-tag">Sales Reporting</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="project-card">
+                <div class="project-img-wrapper">
+                  <img src="assets/img/projects/dental-ms/dashboard.PNG" alt="Dental Clinic Management System">
+                  <span class="project-badge">Healthcare System</span>
+                  <a href="dental-management.html" class="project-overlay-btn" title="Dental MS Dashboard">
+                    <i class="bi bi-eye"></i>
+                  </a>
+                </div>
+                <div class="project-body">
+                  <h3>Dental Clinic Management System</h3>
+                  <p>A specialized medical management platform for dental practices. Streamlines patient intake, clinical appointment scheduling, treatment plans, inventory management, and automated invoicing with revenue reports.</p>
+                  <div class="tech-tags">
+                    <span class="tech-tag">Healthcare EMR</span>
+                    <span class="tech-tag">Dental Care</span>
+                    <span class="tech-tag">Billing &amp; Invoicing</span>
+                    <span class="tech-tag">Revenue Analytics</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="project-card">
+                <div class="project-img-wrapper">
+                  <img src="assets/img/projects/therapy-center/website/hero_section.PNG" alt="Allied Therapy Clinic website">
+                  <span class="project-badge">Website</span>
+                  <a href="allied-therapy-website.html" class="project-overlay-btn" title="Allied Therapy Clinic Website">
+                    <i class="bi bi-eye"></i>
+                  </a>
+                </div>
+                <div class="project-body">
+                  <h3>Allied Therapy Clinic Website</h3>
+                  <p>A conversion-focused clinic website designed to build trust and communicate therapy services clearly. The website introduces the practice, explains service offerings, and supports new enquiries from prospective patients.</p>
+                  <div class="tech-tags">
+                    <span class="tech-tag">Healthcare Website</span>
+                    <span class="tech-tag">SEO</span>
+                    <span class="tech-tag">Lead Generation</span>
+                    <span class="tech-tag">Brand Positioning</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="project-card">
+                <div class="project-img-wrapper">
+                  <img src="assets/img/projects/therapy-center/login.png" alt="Allied Therapy Clinic management system">
+                  <span class="project-badge">Management System</span>
+                  <a href="allied-therapy-management.html" class="project-overlay-btn" title="Allied Therapy Clinic Management System">
+                    <i class="bi bi-eye"></i>
+                  </a>
+                </div>
+                <div class="project-body">
+                  <h3>Allied Therapy Clinic Management System</h3>
+                  <p>A clinical operations platform built for therapy departments and clinic teams. It manages appointments, patient records, assessments, attendance, billing, and therapist workflows in one system.</p>
+                  <div class="tech-tags">
+                    <span class="tech-tag">Therapy EMR</span>
+                    <span class="tech-tag">SOAP Notes</span>
+                    <span class="tech-tag">Clinical Assessments</span>
+                    <span class="tech-tag">Patient Records</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="project-card">
+                <div class="project-img-wrapper">
+                  <img src="assets/img/projects/esojob/website/Services _ Job Matching & Visa Support _ Eso Job Ghana - Google Chrome 4_5_2026 4_27_46 PM.png" alt="Eso Jobs website">
+                  <span class="project-badge">Website</span>
+                  <a href="esojobs-website.html" class="project-overlay-btn" title="Eso Jobs Website">
+                    <i class="bi bi-eye"></i>
+                  </a>
+                </div>
+                <div class="project-body">
+                  <h3>Eso Jobs Website</h3>
+                  <p>A premium digital recruitment website developed to connect Ghanaian talent with verified international opportunities. The site focuses on conversion, trust, and clear communication around services and opportunities.</p>
+                  <div class="tech-tags">
+                    <span class="tech-tag">Recruitment Website</span>
+                    <span class="tech-tag">SEO</span>
+                    <span class="tech-tag">Lead Generation</span>
+                    <span class="tech-tag">Trust Branding</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="project-card">
+                <div class="project-img-wrapper">
+                  <img src="assets/img/projects/esojob/ms/esojobs-management-preview.png" alt="Eso Jobs recruitment management system preview">
+                  <span class="project-badge">Management System</span>
+                  <a href="esojobs-management.html" class="project-overlay-btn" title="Eso Jobs Recruitment Management System">
+                    <i class="bi bi-eye"></i>
+                  </a>
+                </div>
+                <div class="project-body">
+                  <h3>Eso Jobs Recruitment Management System</h3>
+                  <p>An internal recruitment workflow system for managing job listings, postings, applicant inquiries, and ongoing hiring coordination. It supports the business operations behind the public recruitment website.</p>
+                  <div class="tech-tags">
+                    <span class="tech-tag">Recruitment System</span>
+                    <span class="tech-tag">Job Management</span>
+                    <span class="tech-tag">Applicant Tracking</span>
+                    <span class="tech-tag">Admin Workflow</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-prev" aria-label="Previous case study"></div>
+          <div class="swiper-button-next" aria-label="Next case study"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA ── -->
+    <div class="cta-band">
+      <div class="container" data-aos="fade-up">
+        <h2>Need a Custom System Built for Your Business?</h2>
+        <p>Whether you need a healthcare management portal, point of sale software, or custom web platform, our team is ready to deliver.</p>
+        <a href="contact.html" class="btn-cta">
+          Discuss Your Project <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer id="footer" class="footer position-relative">
+    <div class="container">
+      <div class="footer-top">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-6">
+            <div class="footer-brand">
+              <a href="index.html" class="logo-link" aria-label="TechWaiv home">
+                <img src="assets/img/logo.png" alt="TechWaiv Logo" class="footer-logo-img">
+              </a>
+              <p>Waiv Technologies. — technology, delivered with process.</p>
+            <div class="social-links">
+              <a href="#" aria-label="TechWaiv on X"><i class="bi bi-twitter-x"></i></a>
+              <a href="#" aria-label="TechWaiv on Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" aria-label="TechWaiv on Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" aria-label="TechWaiv on LinkedIn"><i class="bi bi-linkedin"></i></a>
+            </div>
+              <div class="footer-contact">
+                <p>Ghana</p>
+                <p>contact.techwaiv@gmail.com</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6">
+            <h4>Company</h4>
+            <ul class="footer-links">
+              <li><a href="about.html">About us</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="service-details.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6">
+            <h4>Resources</h4>
+            <ul class="footer-links">
+              <li><a href="privacy-policy.html">Privacy Policy</a></li>
+              <li><a href="privacy-policy.html">Terms of Service</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h4>Case Studies</h4>
+            <ul class="footer-links">
+              <li><a href="waiv-in.html">Waiv-In POS &amp; Inventory System</a></li>
+              <li><a href="dental-management.html">Dental Clinic Management System</a></li>
+              <li><a href="allied-therapy-management.html">Allied Therapy Clinic Management</a></li>
+              <li><a href="esojobs-management.html">Eso Jobs Recruitment Management System</a></li>
+              <li><a href="esojobs-website.html">Eso Jobs Website</a></li>
+              <li><a href="allied-therapy-website.html">Allied Therapy Clinic Website</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="copyright">
+          <span>Copyright &copy; <span id="copyright-year"></span></span>
+          <span>All Rights Reserved</span>
+        </div>
+
+        <ul class="legal-links">
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="contact.html">Support</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Back to top">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const yearSpan = document.getElementById("copyright-year");
+      if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+      }
+    });
+  </script>
+
+</body>
+
+</html>

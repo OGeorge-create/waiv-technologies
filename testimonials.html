@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Client Testimonials | TechWaiv Ghana Software Reviews</title>
+  <meta name="description" content="Read client testimonials for TechWaiv's custom software, web development, and business system projects across Ghana and international clients.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://techwaiv.com/testimonials">
+  <meta property="og:title" content="Client Testimonials | TechWaiv Ghana Software Reviews">
+  <meta property="og:description" content="See what clients say about TechWaiv's software engineering, web development, and digital transformation work.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://techwaiv.com/testimonials">
+  <meta property="og:image" content="https://techwaiv.com/assets/img/logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Client Testimonials | TechWaiv Ghana Software Reviews">
+  <meta name="twitter:description" content="Real feedback from clients who partnered with TechWaiv for software and digital product delivery.">
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "TechWaiv Client Testimonials",
+      "description": "Client feedback and project outcomes for TechWaiv's custom software, website, and digital system projects.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "TechWaiv",
+        "url": "https://techwaiv.com"
+      }
+    }
+  </script>
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    /* ── Page Hero ── */
+    .testimonials-hero {
+      background: linear-gradient(180deg, #000000 0%, #0b0f17 100%);
+      padding: 100px 0 60px;
+      text-align: center;
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .testimonials-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 50%, rgba(220, 38, 38, 0.18) 0%, transparent 70%);
+    }
+    .testimonials-hero h1 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 16px;
+      position: relative;
+    }
+    .testimonials-hero h1 span { color: var(--primary-red); }
+    .testimonials-hero p {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.72);
+      max-width: 540px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    /* ── Breadcrumb ── */
+    .breadcrumb-bar {
+      background: #000000;
+      padding: 12px 0;
+      font-size: 13px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .breadcrumb-bar a { color: var(--primary-red); text-decoration: none; }
+    .breadcrumb-bar span { color: #888; }
+
+    /* ── Notice banner ── */
+    .notice-banner {
+      background: rgba(220, 38, 38, 0.1);
+      border-left: 4px solid var(--primary-red);
+      border-radius: 5px;
+      padding: 14px 20px;
+      font-size: 0.88rem;
+      color: #F3F4F6;
+      margin-bottom: 40px;
+    }
+    .notice-banner strong { color: var(--primary-red); }
+
+    /* ── Stats bar ── */
+    .stats-bar {
+      background: linear-gradient(180deg, #050505 0%, #111827 100%);
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 40px 0;
+      color: #fff;
+      text-align: center;
+    }
+    .stat-item .stat-num {
+      font-size: 2.5rem;
+      font-weight: 800;
+      font-family: 'Raleway', sans-serif;
+      color: var(--primary-red);
+    }
+    .stat-item .stat-label {
+      font-size: 0.88rem;
+      opacity: 0.85;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* ── Testimonial Cards ── */
+    .testimonial-card {
+      background: rgba(31, 41, 55, 0.5);
+      border-radius: 5px;
+      padding: 36px 32px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+      height: 100%;
+      position: relative;
+      transition: box-shadow 0.25s, border-color 0.25s;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      -webkit-backdrop-filter: blur(12px);
+      backdrop-filter: blur(12px);
+    }
+    .testimonial-card:hover {
+      
+      box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+    }
+    .testimonial-card .quote-icon {
+      font-size: 2.5rem;
+      color: var(--primary-red);
+      opacity: 0.35;
+      position: absolute;
+      top: 20px;
+      right: 24px;
+      line-height: 1;
+    }
+    .testimonial-card .stars {
+      color: #f59e0b;
+      margin-bottom: 18px;
+      font-size: 15px;
+    }
+    .testimonial-card .quote-text {
+      font-size: 0.97rem;
+      line-height: 1.75;
+      color: #D1D5DB;
+      flex-grow: 1;
+      font-style: italic;
+      margin-bottom: 24px;
+    }
+    .testimonial-card .tc-footer {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 18px;
+    }
+    .testimonial-card .tc-avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 5px;
+      background: rgba(220, 38, 38, 0.15);
+      border: 1px solid rgba(220, 38, 38, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--primary-red);
+      flex-shrink: 0;
+      font-family: 'Raleway', sans-serif;
+    }
+    .testimonial-card .tc-meta h5 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 2px;
+    }
+    .testimonial-card .tc-meta span {
+      font-size: 0.8rem;
+      color: #9CA3AF;
+    }
+    .testimonial-card .project-tag {
+      display: inline-block;
+      background: rgba(220, 38, 38, 0.15);
+      color: var(--primary-red);
+      border: 1px solid rgba(220, 38, 38, 0.3);
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 4px;
+      margin-bottom: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* ── CTA ── */
+    .cta-band {
+      background: linear-gradient(180deg, #050505 0%, #111827 100%);
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 70px 0;
+      text-align: center;
+      color: #fff;
+    }
+    .cta-band h2 {
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 14px;
+    }
+    .cta-band p {
+      color: rgba(255,255,255,0.72);
+      font-size: 1rem;
+      margin-bottom: 32px;
+    }
+    .btn-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #E63946, #D62828);
+      color: #fff;
+      padding: 14px 36px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .btn-cta:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(230,57,70,0.4);
+      color: #fff;
+      background: #E63946;
+    }
+
+    /* ── Section spacing ── */
+    .testimonials-grid-section {
+      padding: 80px 0;
+      background: #000000;
+      color: #FFFFFF;
+    }
+    .section-label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #E63946;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .section-heading {
+      font-size: clamp(1.5rem, 2.5vw, 2rem);
+      font-weight: 800;
+      color: #FFFFFF;
+      margin-bottom: 12px;
+    }
+    .section-subheading {
+      color: #B0B8C1;
+      font-size: 0.97rem;
+      max-width: 560px;
+    }
+  </style>
+</head>
+
+<body class="testimonials-page">
+
+  <!-- ── HEADER / NAV ── -->
+  <header id="header" class="header d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+        <li><a href="about.html"><i class="bi bi-building navicon"></i><span>About Us</span></a></li>
+        <li><a href="service-details.html"><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li>
+        <li><a href="portfolio.html"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
+        <li><a href="testimonials.html" class="active"><i class="bi bi-chat-quote navicon"></i><span>Testimonials</span></a></li>
+        <li><a href="contact.html"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main" id="main">
+
+    <!-- ── HERO ── -->
+    <div class="testimonials-hero">
+      <div class="container" data-aos="fade-up">
+        <h1>Client <span>Testimonials</span></h1>
+        <p>Honest feedback from businesses and professionals we have worked with across Ghana and beyond.</p>
+      </div>
+    </div>
+
+    <!-- ── BREADCRUMB ── -->
+    <div class="breadcrumb-bar">
+      <div class="container">
+        <a href="index.html">Home</a> &nbsp;/&nbsp; <span>Testimonials</span>
+      </div>
+    </div>
+
+    <!-- ── STATS BAR ── -->
+    <div class="stats-bar">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-6 col-md-3">
+            <div class="stat-item">
+              <div class="stat-num">4+</div>
+              <div class="stat-label">Active Divisions</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-item">
+              <div class="stat-num">7+</div>
+              <div class="stat-label">Delivered Projects</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-item">
+              <div class="stat-num">2</div>
+              <div class="stat-label">Countries Served</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-item">
+              <div class="stat-num">100%</div>
+              <div class="stat-label">Direct Client Contact</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── TESTIMONIALS GRID ── -->
+    <section class="testimonials-grid-section">
+      <div class="container">
+
+        <div class="mb-5" data-aos="fade-up">
+          <p class="section-label">What clients say</p>
+          <h2 class="section-heading">Trusted by Businesses We've Built For</h2>
+          <p class="section-subheading">Below are testimonials from clients whose projects TechWaiv has delivered. We present these without embellishment — our work speaks for itself.</p>
+        </div>
+
+        <!-- NOTICE: uncomment and update the notice below if testimonials need verification -->
+        <!--
+        <div class="notice-banner" data-aos="fade-up">
+          <strong>Note:</strong> These testimonials are currently pending verification with named clients. We are committed to publishing only authentic, verifiable feedback.
+        </div>
+        -->
+
+        <div class="row gy-4">
+
+          <!-- Testimonial 1 -->
+          <div class="col-lg-6 col-xl-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="testimonial-card">
+              <i class="bi bi-quote quote-icon"></i>
+              <span class="project-tag">Dental Management System</span>
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="quote-text">"The dental management system TechWaiv built for us has completely changed how we run day-to-day operations. Patient records, appointments and billing are all in one place now. Excellent work."</p>
+              <div class="tc-footer">
+                <div class="tc-avatar">CD</div>
+                <div class="tc-meta">
+                  <h5>Clyda Dental</h5>
+                  <span>KumasiGhana</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="col-lg-6 col-xl-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="testimonial-card">
+              <i class="bi bi-quote quote-icon"></i>
+              <span class="project-tag">Recruitment Platform</span>
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="quote-text">"TechWaiv delivered a professional, well-structured recruitment platform on time. The candidate management features and multi-role access system work exactly as we discussed in discovery."</p>
+              <div class="tc-footer">
+                <div class="tc-avatar">EJ</div>
+                <div class="tc-meta">
+                  <h5>Eso Jobs</h5>
+                  <span>Ghana & International</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="col-lg-6 col-xl-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="testimonial-card">
+              <i class="bi bi-quote quote-icon"></i>
+              <span class="project-tag">Allied Therapy Website</span>
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+              </div>
+              <p class="quote-text">"They built a clean, professional website that represents our clinic well. The process was straightforward — requirements were documented upfront and the review round was handled properly."</p>
+              <div class="tc-footer">
+                <div class="tc-avatar">AT</div>
+                <div class="tc-meta">
+                  <h5>Allied Therapy Clinic</h5>
+                  <span>Ghana</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA ── -->
+    <div class="cta-band">
+      <div class="container" data-aos="fade-up">
+        <h2>Ready to become our next success story?</h2>
+        <p>Tell us about your project and let's figure out how TechWaiv can help you build it.</p>
+        <a href="contact.html" class="btn-cta">
+          Start a Conversation <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer id="footer" class="footer position-relative">
+    <div class="container">
+      <div class="footer-top">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-6">
+            <div class="footer-brand">
+              <a href="index.html" class="logo-link" aria-label="TechWaiv home">
+                <img src="assets/img/logo.png" alt="TechWaiv Logo" class="footer-logo-img">
+              </a>
+              <p>Waiv Technologies. — technology, delivered with process.</p>
+            <div class="social-links">
+              <a href="#" aria-label="TechWaiv on X"><i class="bi bi-twitter-x"></i></a>
+              <a href="#" aria-label="TechWaiv on Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" aria-label="TechWaiv on Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" aria-label="TechWaiv on LinkedIn"><i class="bi bi-linkedin"></i></a>
+            </div>
+              <div class="footer-contact">
+                <p>Ghana</p>
+                <p>contact.techwaiv@gmail.com</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6">
+            <h4>Company</h4>
+            <ul class="footer-links">
+              <li><a href="about.html">About us</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="service-details.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6">
+            <h4>Resources</h4>
+            <ul class="footer-links">
+              <li><a href="privacy-policy.html">Privacy Policy</a></li>
+              <li><a href="privacy-policy.html">Terms of Service</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h4>Case Studies</h4>
+            <ul class="footer-links">
+              <li><a href="waiv-in.html">Waiv-In POS &amp; Inventory System</a></li>
+              <li><a href="dental-management.html">Dental Clinic Management System</a></li>
+              <li><a href="allied-therapy-management.html">Allied Therapy Clinic Management</a></li>
+              <li><a href="esojobs-management.html">Eso Jobs Recruitment Management System</a></li>
+              <li><a href="esojobs-website.html">Eso Jobs Website</a></li>
+              <li><a href="allied-therapy-website.html">Allied Therapy Clinic Website</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="copyright">
+          <span>Copyright &copy; <span id="copyright-year"></span></span>
+          <span>All Rights Reserved</span>
+        </div>
+
+        <ul class="legal-links">
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="contact.html">Support</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Back to top">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.getElementById('copyright-year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+
+</html>

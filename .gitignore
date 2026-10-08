@@ -1,0 +1,10 @@
+# Ignore all markdown files
+*.md
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# IDE and editor files
+.vscode/
+.idea/
