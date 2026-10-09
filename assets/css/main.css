@@ -592,6 +592,23 @@ h6 {
   max-width: 360px;
 }
 
+.footer-brand-name {
+  margin: 0 0 6px !important;
+  color: rgba(255, 255, 255, 0.96) !important;
+  font-size: 0.82rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.16em !important;
+  text-transform: uppercase !important;
+}
+
+.footer-brand-short {
+  margin: 0 0 18px !important;
+  color: rgba(255, 255, 255, 0.72) !important;
+  font-size: 0.68rem !important;
+  letter-spacing: 0.18em !important;
+  text-transform: uppercase !important;
+}
+
 .footer .footer-contact {
   margin-top: 28px;
   display: flex;
@@ -1074,6 +1091,37 @@ section,
   margin: 0 auto !important;
   padding: 0 !important;
   filter: drop-shadow(0 4px 16px rgba(0, 0, 0, 0.7));
+}
+
+.brand-identity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: -8px auto 18px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.brand-company {
+  color: rgba(255, 255, 255, 0.96);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.brand-divider {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9rem;
+}
+
+.brand-short {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
 }
 
 .footer-logo-img {
